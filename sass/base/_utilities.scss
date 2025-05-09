@@ -1,0 +1,29 @@
+@use '../abstracts' as *;
+
+.enlace {
+  color: $color-yellow;
+  text-decoration: none;
+  li {
+    margin-left: 20px;
+    a:hover {
+      color: $color-red-light;
+      text-decoration: underline;
+    }
+  }
+}
+
+.seccion-bordeada {
+  @include roundBorder;
+
+  position: relative;
+  &--titulo {
+    position: absolute;
+    font-size: $title-font-size;
+    top: -40px;
+    left: 0;
+  }
+}
+
+.contenedor-bordeado {
+  @include roundBorder;
+}

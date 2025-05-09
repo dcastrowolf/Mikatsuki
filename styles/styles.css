@@ -58,10 +58,6 @@ main > section:not(:first-child) {
   margin-left: 20px;
 }
 
-.fondoMenu {
-  background-color: #7a7391;
-}
-
 .main-text {
   max-width: 80ch;
   font-size: var(--base-font-size);
@@ -91,6 +87,9 @@ main > section:not(:first-child) {
 
 /* footer */
 
+.footer {
+  background-color: aqua;
+}
 .footer--redes {
   display: flex;
   flex-direction: row;

@@ -1,0 +1,16 @@
+@use '../abstracts' as *;
+
+.encabezado {
+  background-color: $color-primary;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 30px 20px 30px 130px;
+  align-items: center;
+  &--titulo {
+    color: whitesmoke;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+}
