@@ -1,4 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Atma:wght@300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sniglet:wght@400;800&display=swap");
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem);
+  }
+  80% {
+    transform: translateX(-1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
 main {
   padding: 4.75rem;
 }
@@ -16,16 +29,13 @@ main > section:not(:first-child) {
   color: #fdf5b7;
   text-decoration: none;
 }
-.enlace li {
-  margin-left: 20px;
-}
-.enlace li a:hover {
+.enlace:hover, .enlace[aria-current=page] {
   color: #f2c6c2;
   text-decoration: underline;
 }
 
 .seccion-bordeada {
-  border: 1px solid #625C75;
+  border: 1px solid #625c75;
   border-radius: 15px;
   padding: 20px;
   position: relative;
@@ -38,7 +48,7 @@ main > section:not(:first-child) {
 }
 
 .contenedor-bordeado {
-  border: 1px solid #625C75;
+  border: 1px solid #625c75;
   border-radius: 15px;
   padding: 20px;
 }
@@ -90,4 +100,8 @@ main > section:not(:first-child) {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.seccion-principal--imagen img {
+  animation: moveInRight 1s ease-out;
 }

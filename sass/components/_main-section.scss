@@ -1,0 +1,7 @@
+@use '../abstracts' as *;
+
+.seccion-principal--imagen {
+  img {
+    animation: moveInRight 1s ease-out;
+  }
+}

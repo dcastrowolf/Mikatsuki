@@ -3,12 +3,10 @@
 .enlace {
   color: $color-yellow;
   text-decoration: none;
-  li {
-    margin-left: 20px;
-    a:hover {
-      color: $color-red-light;
-      text-decoration: underline;
-    }
+  &:hover,
+  &[aria-current='page'] {
+    color: $color-secondary;
+    text-decoration: underline;
   }
 }
 
