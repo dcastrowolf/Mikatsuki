@@ -1,0 +1,10 @@
+// Importando los estilos base
+@use 'base/base';
+@use 'base/utilities';
+
+// componentes uzados en todas las paginas
+@use 'components/boton';
+@use 'components/header';
+@use 'components/footer';
+@use 'components/cards';
+

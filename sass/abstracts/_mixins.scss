@@ -1,0 +1,9 @@
+@use 'colors' as *;
+@use 'fonts' as *;
+@use 'variables' as *;
+
+@mixin roundBorder {
+  border: 1px solid $color-primary-dark;
+  border-radius: $border-radius;
+  padding: $internal-padding;
+}
