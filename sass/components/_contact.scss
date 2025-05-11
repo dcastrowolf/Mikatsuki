@@ -1,0 +1,14 @@
+@use '../abstracts' as *;
+
+.contacto {
+  &--imagen img {
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &--formulario {
+    @include border;
+
+    padding: 20px;
+  }
+}

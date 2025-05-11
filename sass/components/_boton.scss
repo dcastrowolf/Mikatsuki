@@ -3,4 +3,11 @@
 .boton {
   background-color: $color-primary;
   color: white;
+  text-transform: uppercase;
+  font-weight: 500;
+  width: fit-content;
+  &:hover {
+    background-color: $color-primary-dark;
+    color: white;
+  }
 }

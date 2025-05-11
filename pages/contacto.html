@@ -45,35 +45,33 @@
   </header>
   <main>
     <!--para el contenido especifico-->
-    <section>
-      <!--dividir por temas el contenido especifico de un archivo-->
-      <h2>¿Quieres hablar conmigo?</h2>
-      <h3>Enviame un mensajito</h3>
-      <form class="w-50 d-flex flex-column">
-        <div class="mb-3">
-          <label for="nombre" class="form-label">Tú Nombre</label>
-          <input type="text" class="form-control" id="nombre">
-        </div>
-        <div class="mb-3">
-          <label for="email" class="form-label">Tú email</label>
-          <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
-        </div>
-        <div class="mb-3">
-          <label for="asunto" class="form-label">Asunto</label>
-          <input type="text" class="form-control" id="asunto">
-        </div>
-        <div class="mb-3">
-          <label for="mensaje" class="form-label">Tú Mensaje</label>
-          <textarea name="" class="form-control" id="mensaje"></textarea>
-        </div>
-        <button type="submit" class="btn | boton">Enviar</button>
-      </form>
-    </section>
-    <section>
-      <article>
-        <!--anidar estructuras de codigo que tiendan a repetirse en un archivo ej:grilla de productos-->
-      </article>
-
+    <section class="contacto | container d-flex justify-content-between gap-4">
+      <div class="contacto--imagen">
+        <img src="../assets/img/May_locucion.jpg" alt="May Mikatsuki" width="350" height="450" />
+      </div>
+      <div class="contacto--formulario | flex-grow-1">
+        <h2>¿Quieres hablar conmigo?</h2>
+        <h3>Enviame un mensajito 💜</h3>
+        <form class="d-flex flex-column">
+          <div class="mb-3">
+            <label for="nombre" class="form-label">Tú Nombre</label>
+            <input type="text" class="form-control" id="nombre">
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Tú email</label>
+            <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+          </div>
+          <div class="mb-3">
+            <label for="asunto" class="form-label">Asunto</label>
+            <input type="text" class="form-control" id="asunto">
+          </div>
+          <div class="mb-3">
+            <label for="mensaje" class="form-label">Tú Mensaje</label>
+            <textarea name="" class="form-control" id="mensaje"></textarea>
+          </div>
+          <button type="submit" class="btn align-self-center | boton">Enviar</button>
+        </form>
+      </div>
     </section>
   </main>
   <footer class="footer">

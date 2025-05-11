@@ -35,7 +35,7 @@ main > section:not(:first-child) {
 }
 
 .seccion-bordeada {
-  border: 1px solid #625c75;
+  border: 1px solid #4a5b8c;
   border-radius: 15px;
   padding: 20px;
   position: relative;
@@ -48,13 +48,21 @@ main > section:not(:first-child) {
 }
 
 .contenedor-bordeado {
-  border: 1px solid #625c75;
+  border: 1px solid #4a5b8c;
   border-radius: 15px;
   padding: 20px;
 }
 
 .boton {
   background-color: #7a7391;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 500;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.boton:hover {
+  background-color: #4a5b8c;
   color: white;
 }
 
@@ -104,4 +112,14 @@ main > section:not(:first-child) {
 
 .seccion-principal--imagen img {
   animation: moveInRight 1s ease-out;
+}
+
+.contacto--imagen img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.contacto--formulario {
+  border: 1px solid #4a5b8c;
+  padding: 20px;
 }
